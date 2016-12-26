@@ -12,7 +12,7 @@ LyricView is a powerful and flexible custom view to display lyrics within music 
 			maven { url 'https://jitpack.io' }
 		}
 	}
-
+	
 	step 2 Add the dependency
 	dependencies {
 	        compile 'com.github.zhengken:LyricViewDemo:v1.0'
@@ -26,18 +26,18 @@ LyricView is a powerful and flexible custom view to display lyrics within music 
 ### Java code
     //step 2
     LyricView mLyricView = (LyricView)findViewById(R.id.custom_lyric_view);
-
+    
     //step 3
     mLyricView.setLyricFile(lyricFile);
-
+    
     //step 4, update LyricView every interval
     mLyricView.setCurrentTimeMillis(progress);
-
+    
     //step 5, implement the interface when user drag lyrics and click the play icon
     mLyricView.setOnPlayerClickListener(new LyricView.OnPlayerClickListener() {
             @Override
             public void onPlayerClicked(long progress, String content) {
-
+                
             }
         });
 ### XML attributes
@@ -63,7 +63,7 @@ LyricView is a powerful and flexible custom view to display lyrics within music 
 |`setTypeface(Typeface typeface)`|Set the typeface of lyrics|
 |`reset()`|Reset the LyricView|
 ## Thanks
-@[码农小阿飞][3]
+[@码农小阿飞][3]
 ## License
     Copyright 2016 zhengken
 
@@ -82,5 +82,4 @@ LyricView is a powerful and flexible custom view to display lyrics within music 
 
   [1]: https://github.com/zhengken/LyricViewDemo/tree/master/sample
   [2]: https://youtu.be/Mjp9I6-0KHs
-
-
+  [3]: http://blog.csdn.net/mario_0824
