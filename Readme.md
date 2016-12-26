@@ -63,7 +63,7 @@ LyricView is a powerful and flexible custom view to display lyrics within music 
 |`setTypeface(Typeface typeface)`|Set the typeface of lyrics|
 |`reset()`|Reset the LyricView|
 ## Thanks
-[@码农小阿飞][3]
+@[码农小阿飞][3]
 ## License
     Copyright 2016 zhengken
 
