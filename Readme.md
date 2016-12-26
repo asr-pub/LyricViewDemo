@@ -2,7 +2,7 @@
 LyricView is a powerful and flexible custom view to display lyrics within music player under Android 
 ## Screenshot
 ![](/screenshot/lyricview.png)
-[LyricViewDemo.apk][1]
+[LyricViewDemo.apk][1]      [YouTube][2]
 ## Usage
 ### Gradle dependency
 ### XML code
@@ -14,18 +14,18 @@ LyricView is a powerful and flexible custom view to display lyrics within music 
 ### Java code
     //step 2
     LyricView mLyricView = (LyricView)findViewById(R.id.custom_lyric_view);
-    
+
     //step 3
     mLyricView.setLyricFile(lyricFile);
-    
+
     //step 4, update LyricView every interval
     mLyricView.setCurrentTimeMillis(progress);
-    
+
     //step 5, implement the interface when user drag lyrics and click the play icon
     mLyricView.setOnPlayerClickListener(new LyricView.OnPlayerClickListener() {
             @Override
             public void onPlayerClicked(long progress, String content) {
-                
+
             }
         });
 ### XML attributes
@@ -54,3 +54,4 @@ LyricView is a powerful and flexible custom view to display lyrics within music 
 
 
   [1]: https://github.com/zhengken/LyricViewDemo/tree/master/sample
+  [2]: https://youtu.be/Mjp9I6-0KHs
