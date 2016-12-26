@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="artist">#8D8D8D</color>
+    <color name="mask_image_view">#44555555</color>
+    <color name="lrc_view_text">#8D8D8D</color>
+</resources>

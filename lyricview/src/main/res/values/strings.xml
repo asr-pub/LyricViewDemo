@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LyricView</string>
+    <string name="default_hint">No Lyrics</string>
+</resources>

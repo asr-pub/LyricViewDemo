@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="seek_bar_refresh_interval">1000</integer>
+    <integer name="toast_margin_top_center_in_screen">450</integer>
+</resources>

@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.zhengken.zkmusicplayer.mainactivity.MainFragment">
+
+    <ImageView
+        android:id="@+id/background_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_cover_blur" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mask_image_view" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_title_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/music_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/title_margin_left"
+            android:layout_marginTop="@dimen/title_margin_top"
+            android:text="@string/default_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20sp" />
+
+        <TextView
+            android:id="@+id/music_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/title_margin_left"
+            android:text="@string/default_artist"
+            android:textColor="@color/artist"
+            android:textSize="@dimen/text_size_13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/gradient_margin_top"
+            android:background="@drawable/gradient_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_music_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relative_layout_seek_bar_wrapper"
+        android:layout_below="@id/linear_layout_title_wrapper"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <me.zhengken.lyricview.LyricView
+            android:id="@+id/custom_lyric_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:textSize="@dimen/text_size_16sp" />
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="@dimen/cover_width_height"
+            android:layout_height="@dimen/cover_width_height"
+            android:src="@drawable/default_cover" />
+
+        <ImageView
+            android:id="@+id/cover_mirror"
+            android:layout_width="@dimen/cover_width_height"
+            android:layout_height="@dimen/cover_mirror_height"
+            android:layout_marginTop="@dimen/cover_mirror_margin_top"
+            android:src="@drawable/default_cover_mirror" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_seek_bar_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/music_play_control"
+        android:layout_marginBottom="@dimen/music_play_control_layout_margin_bottom">
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/txt_start_time_margin_left"
+            android:text="@string/default_time"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_8sp" />
+
+        <SeekBar
+            android:id="@+id/music_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/end_time"
+            android:layout_toRightOf="@+id/start_time" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/txt_start_time_margin_left"
+            android:text="@string/default_time"
+            android:textColor="@color/artist"
+            android:textSize="@dimen/text_size_8sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/music_play_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/music_play_control_layout_margin_bottom">
+
+        <ImageView
+            android:id="@+id/btn_mode"
+            android:layout_width="@dimen/play_mode_width_height"
+            android:layout_height="@dimen/play_mode_width_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/play_mode_margin_left"
+            android:src="@drawable/btn_all_repeat_selector" />
+
+        <ImageView
+            android:id="@+id/btn_prev"
+            android:layout_width="@dimen/prev_width_height"
+            android:layout_height="@dimen/prev_width_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/prev_margin_right"
+            android:layout_toLeftOf="@+id/btn_play_pause"
+            android:src="@drawable/btn_prev_selector" />
+
+
+        <ImageView
+            android:id="@+id/btn_play_pause"
+            android:layout_width="@dimen/play_btn_width_height"
+            android:layout_height="@dimen/play_btn_width_height"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_pause_selector" />
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="@dimen/prev_width_height"
+            android:layout_height="@dimen/prev_width_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/prev_margin_right"
+            android:layout_toRightOf="@+id/btn_play_pause"
+            android:src="@drawable/btn_next_selector" />
+
+    </RelativeLayout>
+</RelativeLayout>

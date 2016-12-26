@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--dimen-->
+    <dimen name="title_margin_top">15dp</dimen>
+    <dimen name="title_margin_left">30dp</dimen>
+    <dimen name="gradient_margin_top">10dp</dimen>
+    <dimen name="cover_width_height">220dp</dimen>
+    <dimen name="cover_mirror_height">50dp</dimen>
+    <dimen name="cover_mirror_margin_top">2dp</dimen>
+    <dimen name="txt_start_time_margin_left">20dp</dimen>
+    <dimen name="music_play_control_layout_margin_bottom">20dp</dimen>
+    <dimen name="play_mode_width_height">40dp</dimen>
+    <dimen name="play_mode_margin_left">13dp</dimen>
+    <dimen name="prev_width_height">40dp</dimen>
+    <dimen name="prev_margin_right">35dp</dimen>
+
+    <!-- 29 = (60 / 2) - 1 -->
+    <dimen name="play_btn_width_height">60dp</dimen>
+    <dimen name="play_btn_circle_thickness">29dp</dimen>
+
+    <!--font size-->
+    <dimen name="text_size_8sp">8sp</dimen>
+    <dimen name="text_size_13sp">13sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+
+</resources>

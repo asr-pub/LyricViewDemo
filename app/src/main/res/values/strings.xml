@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LyricViewDemo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="default_title">UnKnown</string>
+    <string name="default_artist">UnKnown</string>
+    <string name="default_time">00:00</string>
+
+    <string name="message_music_is_null">please open a local file</string>
+</resources>
