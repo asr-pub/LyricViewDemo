@@ -751,11 +751,11 @@ public class LyricView extends View {
         if (line.startsWith("[by:")) {
             return;
         }
-        if (index == 9 && line.trim().length() > 10) {
+        if (index >= 9 && line.trim().length() > index + 1) {
             // lyrics
             LineInfo lineInfo = new LineInfo();
             lineInfo.content = line.substring(10, line.length());
-            lineInfo.start = measureStartTimeMillis(line.substring(0, 10));
+            lineInfo.start = measureStartTimeMillis(line.substring(0, index));
             lyricInfo.songLines.add(lineInfo);
         }
     }
@@ -766,7 +766,7 @@ public class LyricView extends View {
     private long measureStartTimeMillis(String str) {
         long minute = Long.parseLong(str.substring(1, 3));
         long second = Long.parseLong(str.substring(4, 6));
-        long millisecond = Long.parseLong(str.substring(7, 9));
+        long millisecond = Long.parseLong(str.substring(7, index));
         return millisecond + second * 1000 + minute * 60 * 1000;
     }
 
