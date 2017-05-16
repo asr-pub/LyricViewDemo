@@ -766,7 +766,7 @@ public class LyricView extends View {
     private long measureStartTimeMillis(String str) {
         long minute = Long.parseLong(str.substring(1, 3));
         long second = Long.parseLong(str.substring(4, 6));
-        long millisecond = Long.parseLong(str.substring(7, index));
+        long millisecond = Long.parseLong(str.substring(7, 9));
         return millisecond + second * 1000 + minute * 60 * 1000;
     }
 
