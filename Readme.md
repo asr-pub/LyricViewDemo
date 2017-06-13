@@ -1,3 +1,4 @@
+[![](https://jitpack.io/v/zhengken/LyricViewDemo.svg)](https://jitpack.io/#zhengken/LyricViewDemo)
 # LyricView
 LyricView is a powerful and flexible custom view to display lyrics within music player under Android 
 ## Screenshot
