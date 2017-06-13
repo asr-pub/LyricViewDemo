@@ -14,9 +14,10 @@ LyricView is a powerful and flexible custom view to display lyrics within music 
 	}
 	
 	step 2 Add the dependency
-	dependencies {
-	        compile 'com.github.zhengken:LyricViewDemo:v1.0'
-	}
+    dependencies {
+            compile 'com.github.zhengken:LyricViewDemo:v1.2'
+    }
+
 ### XML code
     //step 1
     <me.zhengken.lyricview.LyricView
