@@ -288,6 +288,7 @@ public class LyricView extends View {
 
         if (file == null || !file.exists()) {
             reset();
+            mCurrentLyricFilePath = "";
             return;
         } else if (file.getPath().equals(mCurrentLyricFilePath)) {
             return;
