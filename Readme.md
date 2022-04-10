@@ -67,7 +67,7 @@ LyricView is a powerful and flexible custom view to display lyrics within music 
 ## Thanks
 [@码农小阿飞][3]
 ## License
-    Copyright 2016 zhengken
+    Copyright 2016 kkkkk
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
